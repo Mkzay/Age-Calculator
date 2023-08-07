@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section class="first">
+            <form>
+                <div class="left-right">
+                    <label id="label-day">Day</label>
+                    <input id="day" type="text" placeholder="DD" maxlength="2">
+                    <div id="error-day">This Field is Required</div>
+                </div>
+                <div class="left-right">
+                    <label id="label-month">Month</label>
+                    <input id="month" type="text" placeholder="MM" maxlength="2">
+                    <div id="error-month"></div>
+                </div>
+                <div class="left-right">
+                    <label id="label-year">Year</label>
+                    <input id="year" type="text" placeholder="YYYY" maxlength="4">
+                    <div id="error-year"></div>
+                </div>
+            </form>
+        </section>
+        <button id="submit"><img src="images/icon-arrow.svg" alt="icon-arrow"></button>
+        <!--<figure><img src="images/icon-arrow.svg" alt="icon-arrow"></figure>-->
+        <section class="second">
+            <h1><span id="year-result">--</span> years</h1>
+            <h1><span id="month-result">--</span> months</h1>
+            <h1><span id="day-result">--</span> days</h1>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
